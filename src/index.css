@@ -1,6 +1,13 @@
-featured{
+body{
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
+  padding : 0px;
+  margin : 0px;
+}
+
+.featured{
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -30,7 +37,7 @@ featured{
 
 .fp {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -47,6 +54,7 @@ featured{
   width: 100%;
   height: 250px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .fpName{
@@ -77,7 +85,7 @@ featured{
 
 .footer{
   width: 100%;
-  width: 1024px;
+  width: 1264px;
   font-size: 12px;
 }
 
@@ -101,7 +109,7 @@ featured{
 
 .header {
   background-color: #003580;
-  color: white;
+  color: rgb(252, 250, 250);
   display: flex;
   justify-content: center;
   position: relative;
@@ -109,7 +117,7 @@ featured{
 
 .headerContainer {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
   margin: 20px 0px 100px 0px;
 }
 
@@ -160,7 +168,7 @@ featured{
   position: absolute;
   bottom: -25px;
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
 }
 
 .headerIcon {
@@ -182,6 +190,12 @@ featured{
   color: lightgray;
   cursor: pointer;
 }
+
+.headerTitle{
+   font-weight: 900;
+   font: size 20px;
+}
+
 
 .date {
   position: absolute;
@@ -261,7 +275,7 @@ featured{
 
 .footer{
   width: 100%;
-  width: 1024px;
+  width: 1264px;
   font-size: 12px;
 }
 
@@ -292,7 +306,7 @@ featured{
 
 .navContainer{
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
   color: white;
   display: flex;
   align-items: center;
@@ -313,7 +327,7 @@ featured{
 
 .pList{
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -461,7 +475,7 @@ featured{
 }
 
 .homeTitle{
-  width: 1024px;
+  width: 1264px;
   font-size: 20px;
 }
 
@@ -474,7 +488,7 @@ featured{
 
 .hotelWrapper {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -625,7 +639,7 @@ featured{
 
 .listWrapper {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1264px;
   display: flex;
   gap: 20px;
 }
@@ -699,4 +713,8 @@ featured{
 
 .listResult {
   flex: 3;
+}
+
+.faIncons{
+  color :black
 }
