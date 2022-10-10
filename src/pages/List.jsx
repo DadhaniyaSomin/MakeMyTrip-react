@@ -14,7 +14,7 @@ const List = () => {
 
   console.log(
     setDestination(location.state.destination),
-    setOption(location.state.options)
+    setOption(location.state.options, option)
   );
   return (
     <div>
