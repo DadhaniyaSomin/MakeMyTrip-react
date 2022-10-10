@@ -1,9 +1,9 @@
-import { format } from 'date-fns/esm'
-import React, { useState } from 'react'
-import { useLocation } from 'react-router-dom'
-import Header from '../componants/Header'
+import { format } from 'date-fns/esm';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import Header from '../componants/Header';
 import { DateRange } from 'react-date-range';
-import NavBar from '../componants/NavBar'
+import NavBar from '../componants/NavBar';
 import SearchItem from '../componants/SearchItem';
 const List = () => {
   const location = useLocation();
@@ -12,7 +12,10 @@ const List = () => {
   const [date, setDate] = useState(location.state.date);
   const [option, setOption] = useState(location.state.options);
 
-  console.log(destination, date, option);
+  console.log(
+    setDestination(location.state.destination),
+    setOption(location.state.options)
+  );
   return (
     <div>
       <NavBar />
@@ -23,23 +26,28 @@ const List = () => {
             <h1 className="lsTitle"> Search</h1>
             <div className="lsItem">
               <label> Destination: </label>
-              <input type="text" placeholder={destination} value={destination}></input>
+              <input
+                type="text"
+                placeholder={destination}
+                value={destination}
+              ></input>
             </div>
             <div className="lsItem">
               <label> Check In Date: </label>
               {/* <input type="text" className=""></input> */}
               <span onClick={() => setOpenDate(!openDate)}>
-                {`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].endDate, "MM/dd/yyyy")}`}
+                {`${format(date[0].startDate, 'MM/dd/yyyy')} to ${format(
+                  date[0].endDate,
+                  'MM/dd/yyyy'
+                )}`}
               </span>
-              {openDate &&
+              {openDate && (
                 <DateRange
-
                   onChange={(item) => setDate([item.selection])}
                   minDate={new Date()}
                   range={date}
                 />
-              }
-
+              )}
             </div>
 
             <div className="lsItem">
@@ -80,12 +88,12 @@ const List = () => {
             <button> Search </button>
           </div>
           <div className="listResult">
-             <SearchItem />
+            <SearchItem />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default List
+export default List;
