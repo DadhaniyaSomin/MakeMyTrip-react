@@ -28,19 +28,19 @@ const Header = ({ type }) => {
     },
   ]);
 
-  const [options, setOptions] = useState({
+  var options = {
     adults: 0,
     children: 0,
     room: 0,
-  });
+  };
 
-  console.log(
-    setOptions({
-      adults: 0,
-      children: 0,
-      room: 0,
-    })
-  );
+  // console.log(
+  //   setOptions({
+  //     adults: 0,
+  //     children: 0,
+  //     room: 0,
+  //   })
+  // );
 
   const handleOperation = (name, operation) => {
     setOpenOption((prev) => {
